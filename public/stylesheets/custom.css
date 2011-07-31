@@ -1,0 +1,42 @@
+html, body {
+  background: white;
+  height: 100%;
+  width: 100%;
+  margin: 0; }
+
+#wrapper {
+  width: 100%;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%; }
+
+#main {
+  margin: 0 auto -2em;
+  width: 850px; }
+  #main .left {
+    float: left;
+    width: 400px; }
+  #main .right {
+    float: right;
+    width: 400px; }
+  #main .bottom {
+    clear: both;
+    text-align: center; }
+
+#header {
+  background: #bfbfbf;
+  padding: 1em; }
+
+#footer {
+  background: #bfbfbf;
+  height: 2em;
+  width: 100%;
+  text-align: center; }
+  #footer p {
+    position: relative;
+    top: 30%;
+    margin: 0; }
+
+.push {
+  height: 2em;
+  /* NOTE, this should be same as -margin on main */ }

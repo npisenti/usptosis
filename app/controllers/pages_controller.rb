@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   def home
     @fake = FakePatent.all.sample
     @real = RealPatent.all.sample
-    @patent_array = [@fake, @real].shuffle
+    @spin = rand(2)
+    @patent_array = @spin == 0 ? [@fake, @real] : [@real, @fake]
   end
 end
