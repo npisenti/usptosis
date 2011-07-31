@@ -10,16 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110731022936) do
+ActiveRecord::Schema.define(:version => 20110731175737) do
 
   create_table "fake_patents", :force => true do |t|
-    t.string   "name"
+    t.text     "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "real_patents", :force => true do |t|
-    t.string   "name"
+    t.text     "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
