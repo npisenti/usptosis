@@ -21,7 +21,8 @@ html, body {
     width: 400px; }
   #main .bottom {
     clear: both;
-    text-align: center; }
+    text-align: center;
+    margin-top: 800px; }
 
 #header {
   background: #bfbfbf;
