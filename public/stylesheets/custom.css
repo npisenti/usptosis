@@ -4,6 +4,9 @@ html, body {
   width: 100%;
   margin: 0; }
 
+.hidden {
+  display: none; }
+
 #wrapper {
   width: 100%;
   min-height: 100%;
@@ -23,6 +26,10 @@ html, body {
     clear: both;
     text-align: center;
     margin-top: 800px; }
+  #main #check-answer-button {
+    clear: both;
+    text-align: center;
+    margin-top: 200px; }
 
 #header {
   background: #bfbfbf;

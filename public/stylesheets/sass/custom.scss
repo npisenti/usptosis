@@ -6,6 +6,8 @@ html, body {
   margin: 0;
 }
 
+.hidden { display: none; }
+
 #wrapper{
   width: 100%;
   min-height: 100%;
@@ -20,6 +22,7 @@ html, body {
   .left { float:left; width: 400px; }
   .right { float: right; width: 400px; }
   .bottom { clear:both; text-align: center; margin-top: 800px;}
+  #check-answer-button { clear:both; text-align: center; margin-top: 200px;}
 }
 
 #header{
