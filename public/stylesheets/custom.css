@@ -43,7 +43,7 @@ blockquote {
     position: relative;
     float: left;
     width: 400px;
-    height: 190px;
+    height: 250px;
     padding: 10px;
     text-align: center;
     font-size: 18pt;
@@ -55,7 +55,7 @@ blockquote {
     position: relative;
     float: right;
     width: 400px;
-    height: 190px;
+    height: 250px;
     padding: 10px;
     text-align: center;
     font-size: 18pt;
@@ -76,10 +76,13 @@ blockquote {
   #main #control-area {
     clear: both;
     text-align: center;
-    margin-top: 270px;
+    margin-top: 320px;
     height: 60px; }
   #main .patent-info {
-    text-align: center; }
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 55px; }
   #main #stats-area {
     position: relative;
     margin: auto;
