@@ -33,12 +33,12 @@ html, body {
   #main .bottom {
     clear: both;
     text-align: center;
-    margin-top: 800px; }
+    margin-top: 200px; }
   #main #check-answer-button {
     clear: both;
     text-align: center;
     margin-top: 200px; }
-  #main #patent-info {
+  #main .patent-info {
     text-align: center; }
 
 #header {

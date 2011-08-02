@@ -6,6 +6,7 @@ $(document).ready(function(){
   $("#check-button").button();
   $("#roll-again").button();
   $("#roll-again").hide();
+  $(".patent-info").hide();
 
   $("#check-button").click(function(){ 
     if ($("#answer").text() == "0"){
@@ -13,7 +14,8 @@ $(document).ready(function(){
       } else {
       $(".right").css('background', 'green');
       }
-     $("#roll-again").show(); 
+      $(".patent-info").show();
+      $("#roll-again").show(); 
      $("#check-button").hide();
     });
 $("#roll-again").click(function(){

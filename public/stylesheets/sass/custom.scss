@@ -27,9 +27,9 @@ html, body {
 
   .left { float:left; width: 400px; padding: 10px; @include rounded(5px); }
   .right { float: right; width: 400px;  padding: 10px; @include rounded(5px);}
-  .bottom { clear:both; text-align: center; margin-top: 800px;}
+  .bottom { clear:both; text-align: center; margin-top: 200px;}
   #check-answer-button { clear:both; text-align: center; margin-top: 200px;}
-  #patent-info { text-align: center; }
+  .patent-info { text-align: center; }
 }
 
 #header{
