@@ -1,0 +1,148 @@
+top ::= <subject> for <use> | <subject> for <use> in <application> | <subject> for <use> <via> <applicationWord>
+
+
+systemType ::= network-based |
+configurable |
+software-based |
+hardware-based |
+automatic |
+vectorized |
+signed |
+software-definable |
+on-demand |
+wireless |
+mobile |
+remote |
+multi-registration model |
+portable |
+independent |
+efficient |
+human |
+bandwidth-heavy |
+diagnostic |
+extensible |
+semantic |
+social |
+secure |
+scalable |
+aggregate |
+multi-code |
+transparent |
+runtime |
+digital |
+reconfigurable |
+action-based |
+analytical |
+clean |
+environmental |
+green |
+cryptographic |
+comprehensive |
+empirical |
+scientific |
+personalized |
+private |
+public |
+heterogeneous |
+homogeneous |
+predictive |
+automated |
+load-bearing |
+multi-level |
+multi-faceted |
+subscription-based |
+cluster-based |
+cloud-based |
+coal-based |
+browser-controlled |
+user-controlled |
+differential |
+quantum-based |
+flexible |
+multi-machine |
+adaptive |
+distributed |
+symbolic |
+mathematical |
+anti-intrusion |
+common |
+interactive |
+web-based |
+verbose |
+iterative |
+stack-based |
+reusable |
+memory-based |
+parallelized |
+one-click |
+innovative | industrial | efficient | high-tech | conditional
+
+patentSystem ::= system | method | technique | apparatus | system and method | technique and apparatus | network | portal | software | application programming interface (API) | problem identification | computing machine | software entity | call-stack pattern matching | software licensing | methodology | scheduling technique | system to remotely enable software-based options | hardware acceleration | method of installing software | heads-up-display software development tool | signed manifest | constraint injection system | product | software-implemented framework | communications network arrangement | communications network server | computer implemented production | computer readable medium | formatting method | test automation method | architecture | algorithm | mechanism 
+
+subject ::= <systemType> <patentSystem> | <patentSystem>
+
+
+application ::= <applicationWord> | <applicationWord> | <gerundVerb> <applicationWord> | <applicationSentence>
+
+applicationSentence ::= <applicationWord> and <applicationWord> | <gerundVerb> <applicationWord>, <applicationWord>, and  <applicationWord>
+
+use ::= <useWord> | <useWord> | <useWord> and <useWord> | <gerundVerb> <useWordNoIng>
+
+via ::= through | in | by | via | in
+
+
+useWord ::= automating identification |
+tracking errors |
+identifying temporal patterns |
+intelligent service pack installation |
+monitoring faults in cloud-computing environments |
+protecting voice over internet protocol (VoIP) software |
+identifying historically related legal cases |
+simulating a complex system | 
+detecting malicious code | 
+improving user experience |
+purchasing novel software |
+selecting securities |
+electing public officials |
+matching multi-node software systems | 
+generating interactive applications |
+transferring data |
+interfacing with the web |
+integrating service frameworks |
+simulating software systems |
+compiling code |
+interfacing with engineers |
+generating ad revenue |
+leveraging processor-level interactions |
+protecting intellectual property |
+protecting trade secrets |
+responding to law enforcement |
+detecting faults with automated devices |
+financing redundant architecture 
+
+
+ 
+useWordNoIng ::= redundant thread computation |
+copyright enforcement |
+the creation of a hybrid cycle simulation model |
+conflict-resolution |
+multiple interface access to software services |
+intelligent service pack installation |
+redundant hyper-thread applications |
+instrumentation |
+software localization |
+test-based software |
+scalable infrastructure |
+dispersive code 
+
+
+
+
+
+
+applicationWord ::= social media | social media campaigns | enterprise applications | government law enforcement | dynamic magnetic resonance breast imaging | computer systems | telecommunications networks | software identifier standards | video game environments | multiple operating systems | mobile devices | a software communications architecture (SCA) framework | centralized software development systems | visual modeling software | network processors | software modules | security modules | tomographic scanning | provider-tenant environments | wireless networks | portable devices | virtual environments | graphical user interfaces | multiple display devices | software configurations | software defined contexts | electronic devices | software application deployments | computer software libraries | mobile and desktop environments | malicious software campaigns | complex software dependencies | real-time software-reporting-application architectures | software-defined communication systems | highly constrained memory situations | flight control computers | unsynchronized networks | virtual technology environments | teletherapy | politics | social media for political campaigns | computer programming languages | transactional memory systems | multi-chassis network devices | risk-based software testing | telepathy | remotely-hosted repositories | results-based business proposals
+
+
+gerundVerb ::= analyzing | balancing | capitalizing on | coordinating | documenting | expanding | facilitating | implementing | optimizing | proving | restructuring | synthesizing | widening | withstanding | improving | enhancing | revolutionizing | scaling | merging | monitoring
+
+
