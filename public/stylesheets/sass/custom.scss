@@ -1,4 +1,6 @@
 $body-color: #fff;
+$pat-height: 170px;
+$success-color: #091;
 html, body {
   background: $body-color; 
   height: 100%;
@@ -28,14 +30,49 @@ blockquote {
 
 #main{
   margin: 0 auto -2em;
-  width: 850px;
-
-  .left { float:left; width: 400px; padding: 10px; @include rounded(5px); }
-  .right { float: right; width: 400px;  padding: 10px; @include rounded(5px);}
+  width: 860px;
+  .hover-me:hover { 
+    background: darken($body-color, 10%); 
+    .real-q { display: inline; }
+  }
+  .real-q {
+    display: none;
+    position: absolute;    
+    text-align:center;
+    width: 90%;
+    padding: 10px;
+    bottom: 10px;
+    color: green;
+  }
+  .correct-answer{ background: lighten($success-color, 5%); }
+  .left { 
+    position:relative;
+    float:left; 
+    width: 400px; 
+    height: $pat-height; 
+    padding: 10px; 
+    text-align: center;
+    font-size: 15pt;
+    margin: 5px;
+    @include rounded(5px); 
+  }
+  .right { 
+    position:relative;
+    float: right; 
+    width: 400px;
+    height: $pat-height;
+    padding: 10px; 
+    text-align: center;
+    font-size: 15pt;
+    margin: 5px;
+    @include rounded(5px);
+  }
   .top { p { font-size: 10pt; padding-left: 20px; margin-top: -15px;} }
   .bottom { clear:both; text-align: center; margin-top: 200px;}
-  #check-answer-button { clear:both; text-align: center; margin-top: 200px;}
+  #control-area { clear:both; text-align: center; margin-top: 250px; height: 60px;}
   .patent-info { text-align: center; }
+  #stats-area { position: relative; margin: auto; width: 600px; }
+  .stat { font-size: 20pt; padding: 10px; display: inline; }
 }
 
 #header{

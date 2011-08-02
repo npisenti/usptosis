@@ -1,0 +1,12 @@
+<p><%= @patent_array[0].name %></p>
+<div class="patent-info">
+  <% if @spin == 1 %>
+    <p>This is patent number 
+    <%= link_to "#{@patent_array[0].id}", "http://www.google.com/search?tbo=p&tbm=pts&hl=en&q=patent:#{@patent_array[0].id}" %>
+    </p>
+  <% else %>
+    <p>This is patent number TROLL! </p>
+  <% end %>
+</div>
+
+<div class="real-q">Real?</div>

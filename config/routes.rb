@@ -1,5 +1,6 @@
 Usptosis::Application.routes.draw do
 
+  resources :patents
   match '/home', :to => 'pages#home'
   match '/about', :to => 'pages#about'
   root :to => 'pages#home'

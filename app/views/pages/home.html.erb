@@ -2,32 +2,18 @@
   <h1>Which is the patent troll?</h1>
   <p>(i.e., which is a real patent and which has been generated using <a href="http://en.wikipedia.org/wiki/Context-free_grammar">context-free grammar</a>?)
 </div>
-<div class="left">
-  <p><%= @patent_array[0].name %></p>
-  <div class="patent-info">
-    <% if @spin == 1 %>
-      <p>This is patent number 
-      <%= link_to "#{@patent_array[0].id}", "http://www.google.com/search?tbo=p&tbm=pts&hl=en&q=patent:#{@patent_array[0].id}" %>
-      </p>
-    <% else %>
-      <p>This is patent number TROLL! </p>
-    <% end %>
-  </div>
+<div class="left hover-me">
+  <%= render :partial => 'left_patent' %>
 </div>
-<div class="right">
-  <p><%= @patent_array[1].name %></p>
-  <div class="patent-info">
-    <% if @spin == 0 %>
-      <p>This is patent number 
-      <%= link_to "#{@patent_array[1].id}", "http://www.google.com/search?tbo=p&tbm=pts&hl=en&q=patent:#{@patent_array[1].id}" %>
-      </p>
-    <% else %>
-      <p>This is patent number TROLL! </p>
-    <% end %>
-  </div>
+<div class="right hover-me">
+  <%= render :partial => 'right_patent' %>
 </div>
-<div id="check-answer-button">
-  <div id="check-button">Check answer</div>
+<div id="control-area">
   <div id="roll-again">(t)roll again!</div>
   <div id="answer" class="hidden"><%= @spin %></div>
+</div>
+<div id="stats-area">
+  <div class="stat"> Correct: <span id="correct-number">0</span></div>
+  <div class="stat">Incorrect: <span id="incorrect-number">0</span></div>
+  <div class="stat">Percent Correct: <span id="percent-stat">0 %</span></div>
 </div>
