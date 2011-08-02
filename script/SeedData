@@ -1,0 +1,39 @@
+#!/usr/bin/env ruby
+#
+
+require File.join(File.dirname(__FILE__), '..', 'vendor/plugins/seed-fu/lib/seed-fu/writer')
+require 'active_support/core_ext'
+require 'rubygems'
+require 'csv'
+
+REAL_PATENT = File.join( File.dirname(__FILE__), "DataFiles", "RealPatentData.csv")
+REAL_PATENT_OUT = File.join( File.dirname(__FILE__), '..', 'db', 'fixtures', '01_real_patents.rb')
+
+
+FAKE_PATENT = File.join( File.dirname(__FILE__), "DataFiles", "FakePatentData.csv" )
+FAKE_PATENT_OUT = File.join( File.dirname(__FILE__), '..', 'db', 'fixtures', '02_fake_patents.rb')
+
+real_patent = SeedFu::Writer.new({:class_name => 'RealPatent', :seed_by => [:id] })
+fake_patent = SeedFu::Writer.new({:class_name => 'FakePatent', :seed_by => [:id] })
+
+
+# Exports real patents 
+real_patent.write(REAL_PATENT_OUT) do |writer|
+  CSV.foreach(REAL_PATENT, :return_headers => false, :headers => :first_row) do |row|
+    writer.add({
+      :id => row['patent_id'], 
+      :name => row['name'],
+    })
+  end
+end
+
+
+# Exports fake patents 
+fake_patent.write(FAKE_PATENT_OUT) do |writer|
+  CSV.foreach(FAKE_PATENT, :return_headers => false, :headers => :first_row) do |row|
+    writer.add({
+      :id => row['patent_id'],
+      :name => row['name'],
+    })
+  end
+end
