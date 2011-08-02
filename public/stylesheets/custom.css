@@ -18,10 +18,18 @@ html, body {
   width: 850px; }
   #main .left {
     float: left;
-    width: 400px; }
+    width: 400px;
+    padding: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
   #main .right {
     float: right;
-    width: 400px; }
+    width: 400px;
+    padding: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
   #main .bottom {
     clear: both;
     text-align: center;
@@ -30,6 +38,8 @@ html, body {
     clear: both;
     text-align: center;
     margin-top: 200px; }
+  #main #patent-info {
+    text-align: center; }
 
 #header {
   background: #bfbfbf;

@@ -8,6 +8,12 @@ html, body {
 
 .hidden { display: none; }
 
+@mixin rounded($radius: 10px) {
+  -moz-border-radius:    $radius;
+  -webkit-border-radius: $radius;
+  border-radius:         $radius;
+}
+
 #wrapper{
   width: 100%;
   min-height: 100%;
@@ -19,10 +25,11 @@ html, body {
   margin: 0 auto -2em;
   width: 850px;
 
-  .left { float:left; width: 400px; }
-  .right { float: right; width: 400px; }
+  .left { float:left; width: 400px; padding: 10px; @include rounded(5px); }
+  .right { float: right; width: 400px;  padding: 10px; @include rounded(5px);}
   .bottom { clear:both; text-align: center; margin-top: 800px;}
   #check-answer-button { clear:both; text-align: center; margin-top: 200px;}
+  #patent-info { text-align: center; }
 }
 
 #header{
