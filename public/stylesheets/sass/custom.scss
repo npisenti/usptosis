@@ -3,10 +3,14 @@ $pat-height: 170px;
 $success-color: #091;
 html, body {
   background: $body-color; 
+  font-family: Ariel, serif;
   height: 100%;
   width: 100%;
   margin: 0;
 }
+
+h1 { font-family: Ariel, sans-serif; }
+
 
 .hidden { display: none; }
 
@@ -70,7 +74,7 @@ blockquote {
   }
   .top { 
       margin-bottom: 25px;
-      p { font-size: 10pt; padding-left: 20px; margin-top: -15px;} 
+      p { font-size: 10pt; padding-left: 20px; margin-top: -10px;} 
   }
   .bottom { clear:both; text-align: center; margin-top: 200px;}
   #control-area { clear:both; text-align: center; margin-top: 250px; height: 60px;}

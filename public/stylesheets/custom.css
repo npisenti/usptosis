@@ -1,8 +1,12 @@
 html, body {
   background: white;
+  font-family: Ariel, serif;
   height: 100%;
   width: 100%;
   margin: 0; }
+
+h1 {
+  font-family: Ariel, sans-serif; }
 
 .hidden {
   display: none; }
@@ -64,7 +68,7 @@ blockquote {
     #main .top p {
       font-size: 10pt;
       padding-left: 20px;
-      margin-top: -15px; }
+      margin-top: -10px; }
   #main .bottom {
     clear: both;
     text-align: center;
