@@ -33,6 +33,7 @@ blockquote {
   width: 860px;
   .hover-me:hover { 
     background: darken($body-color, 10%); 
+    cursor: pointer;
     .real-q { display: inline; }
   }
   .real-q {
@@ -44,7 +45,7 @@ blockquote {
     bottom: 10px;
     color: green;
   }
-  .correct-answer{ background: lighten($success-color, 5%); }
+  .correct-answer{ background: lighten($success-color, 4%); }
   .left { 
     position:relative;
     float:left; 
@@ -67,7 +68,10 @@ blockquote {
     margin: 5px;
     @include rounded(5px);
   }
-  .top { p { font-size: 10pt; padding-left: 20px; margin-top: -15px;} }
+  .top { 
+      margin-bottom: 25px;
+      p { font-size: 10pt; padding-left: 20px; margin-top: -15px;} 
+  }
   .bottom { clear:both; text-align: center; margin-top: 200px;}
   #control-area { clear:both; text-align: center; margin-top: 250px; height: 60px;}
   .patent-info { text-align: center; }

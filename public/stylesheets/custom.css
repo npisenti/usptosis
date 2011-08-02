@@ -21,7 +21,8 @@ blockquote {
   margin: 0 auto -2em;
   width: 860px; }
   #main .hover-me:hover {
-    background: #e6e6e6; }
+    background: #e6e6e6;
+    cursor: pointer; }
     #main .hover-me:hover .real-q {
       display: inline; }
   #main .real-q {
@@ -33,7 +34,7 @@ blockquote {
     bottom: 10px;
     color: green; }
   #main .correct-answer {
-    background: #00b314; }
+    background: #00ad13; }
   #main .left {
     position: relative;
     float: left;
@@ -58,10 +59,12 @@ blockquote {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px; }
-  #main .top p {
-    font-size: 10pt;
-    padding-left: 20px;
-    margin-top: -15px; }
+  #main .top {
+    margin-bottom: 25px; }
+    #main .top p {
+      font-size: 10pt;
+      padding-left: 20px;
+      margin-top: -15px; }
   #main .bottom {
     clear: both;
     text-align: center;
