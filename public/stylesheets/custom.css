@@ -38,15 +38,15 @@ blockquote {
     bottom: 10px;
     color: green; }
   #main .correct-answer {
-    background: #00ad13; }
+    background: #00a813; }
   #main .left {
     position: relative;
     float: left;
     width: 400px;
-    height: 170px;
+    height: 190px;
     padding: 10px;
     text-align: center;
-    font-size: 15pt;
+    font-size: 18pt;
     margin: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -55,10 +55,10 @@ blockquote {
     position: relative;
     float: right;
     width: 400px;
-    height: 170px;
+    height: 190px;
     padding: 10px;
     text-align: center;
-    font-size: 15pt;
+    font-size: 18pt;
     margin: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -66,17 +66,17 @@ blockquote {
   #main .top {
     margin-bottom: 25px; }
     #main .top p {
-      font-size: 10pt;
+      font-size: 12pt;
       padding-left: 20px;
       margin-top: -10px; }
   #main .bottom {
     clear: both;
     text-align: center;
-    margin-top: 200px; }
+    margin-top: 250px; }
   #main #control-area {
     clear: both;
     text-align: center;
-    margin-top: 250px;
+    margin-top: 270px;
     height: 60px; }
   #main .patent-info {
     text-align: center; }
@@ -91,10 +91,19 @@ blockquote {
 
 #header {
   background: #bfbfbf;
-  padding: 1em;
-  font-size: 1em; }
+  padding: 0px 15px;
+  font-size: 12pt;
+  height: 50px; }
+  #header ul {
+    width: 300px;
+    float: left; }
+    #header ul li {
+      display: inline;
+      padding: 5px;
+      border-left: 1px solid black; }
   #header img {
-    float: right; }
+    float: right;
+    margin-top: 15px; }
 
 #footer {
   /*  background: darken($body-color, 25%); */

@@ -8,4 +8,9 @@ class PagesController < ApplicationController
 
   def about
   end
+
+  def root
+    redirect_to home_path
+  end
+
 end
