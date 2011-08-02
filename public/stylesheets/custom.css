@@ -7,6 +7,10 @@ html, body {
 .hidden {
   display: none; }
 
+blockquote {
+  border-left: solid 1px #bfbfbf;
+  padding: 3px 10px; }
+
 #wrapper {
   width: 100%;
   min-height: 100%;
@@ -30,6 +34,10 @@ html, body {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px; }
+  #main .top p {
+    font-size: 10pt;
+    padding-left: 20px;
+    margin-top: -15px; }
   #main .bottom {
     clear: both;
     text-align: center;
@@ -43,17 +51,24 @@ html, body {
 
 #header {
   background: #bfbfbf;
-  padding: 1em; }
+  padding: 1em;
+  font-size: 1em; }
+  #header img {
+    float: right; }
 
 #footer {
-  background: #bfbfbf;
+  /*  background: darken($body-color, 25%); */
   height: 2em;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  font-size: 8pt; }
+  #footer img {
+    vertical-align: bottom; }
   #footer p {
     position: relative;
-    top: 30%;
     margin: 0; }
+  #footer a {
+    padding: 0 2px 0 2px; }
 
 .push {
   height: 2em;

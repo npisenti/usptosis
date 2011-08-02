@@ -5,4 +5,7 @@ class PagesController < ApplicationController
     @spin = rand(2)
     @patent_array = @spin == 0 ? [@fake, @real] : [@real, @fake]
   end
+
+  def about
+  end
 end

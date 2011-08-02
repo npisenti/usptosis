@@ -14,6 +14,11 @@ html, body {
   border-radius:         $radius;
 }
 
+blockquote {
+  border-left: solid 1px darken($body-color, 25%);
+  padding: 3px 10px;
+}
+
 #wrapper{
   width: 100%;
   min-height: 100%;
@@ -27,6 +32,7 @@ html, body {
 
   .left { float:left; width: 400px; padding: 10px; @include rounded(5px); }
   .right { float: right; width: 400px;  padding: 10px; @include rounded(5px);}
+  .top { p { font-size: 10pt; padding-left: 20px; margin-top: -15px;} }
   .bottom { clear:both; text-align: center; margin-top: 200px;}
   #check-answer-button { clear:both; text-align: center; margin-top: 200px;}
   .patent-info { text-align: center; }
@@ -35,14 +41,19 @@ html, body {
 #header{
   background: darken($body-color, 25%);
   padding: 1em;
+  font-size: 1em; 
+  img {float: right; }
 }
 
 #footer{
-  background: darken($body-color, 25%);
+/*  background: darken($body-color, 25%); */
   height: 2em;
   width: 100%;
   text-align: center;
-  p { position:relative; top:30%; margin:0;}
+  font-size: 8pt; 
+  img {vertical-align:bottom; }
+  p { position:relative; margin:0;}
+  a {padding: 0 2px 0 2px; }
 }
 
  .push {height: 2em; /* NOTE, this should be same as -margin on main */}
