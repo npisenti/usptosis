@@ -22,6 +22,7 @@ $(document).ready(function(){
  // $(".right").button();
 
   $(".left").click(function(){
+    if ($(".left").hasClass('hover-me')){
     if ($("#answer").text() == "0"){
       $(".left").addClass('correct-answer');
       $(".left").removeClass('hover-me');
@@ -37,10 +38,12 @@ $(document).ready(function(){
     $("#roll-again").show(); 
     
     updatePercentage();
-    
+    } 
   });
   
   $(".right").click(function(){
+    if ($(".right").hasClass('hover-me')){
+
       if ($("#answer").text() == "0"){
         $(".left").addClass('correct-answer');
         $(".left").removeClass('hover-me');
@@ -57,7 +60,7 @@ $(document).ready(function(){
       $("#roll-again").show(); 
     
       updatePercentage();
-  
+      } 
   });
 
   $("#roll-again").click(function(){
